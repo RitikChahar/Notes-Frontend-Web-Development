@@ -22,3 +22,4 @@ body{
 |It is a unique identifier.|It is a property.|
 |Multiple elements cannot have same id.|Multiple elements can have same class.|
 |One element can have only one id.|One element can have multiple classes.|
+|# is used to target an id.|. is used to target a class.|
