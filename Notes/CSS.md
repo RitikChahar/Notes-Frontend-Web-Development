@@ -69,7 +69,7 @@ h2.blog{
 ### Preference Order in CSS
 |Order|Type|
 |:--|--:|
-|1st|inline CSS|
+|1st|Inline CSS|
 |2nd|id Selector|
 |3rd|class Selector|
 |4th|Universal Selector|
