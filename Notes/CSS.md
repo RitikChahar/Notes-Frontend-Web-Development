@@ -77,7 +77,8 @@
 ```css
 /* This is a comment. */
 ```
-## 5. Types of colors in CSS
+## 5. Colors in CSS
+### Types of colors in CSS
 - Using Color Name
     ```css
     .heading{
@@ -94,5 +95,64 @@
     ```css
     .heading{
         color: rgb(255,140,0);
+    }
+    ```
+- Using Color Gradient
+    - Linear Gradient
+        ```css
+        body{
+            background: linear-gradient(to right bottom, green,rgb(255,140,0), rgba(255,140,0,0));
+            /* We can add as many colors as we want, for direction we can also use angle in degree, eg. 90deg. */
+        }
+        ```
+    - Radial Gradient
+        ```css
+        body{
+            background: radial-gradient(circle, red 10%, green 20%, rgba(0,0,255,0.2) 40%);
+            /* background-size will not work for radial gradient. Shape can either be cirle or ellipse.*/
+        }
+        ```
+## 6. Background in CSS
+- Adding color to the background
+    ```css
+    .paragraph{
+        background: rgb(150, 175, 6);
+    }
+    ```
+- Adding image to the background
+    ```css
+    .paragraph{
+        background: url("Path");
+    }
+    ```
+- Adjusting size of a background image
+    - Using height and width
+        ```css
+        body{
+            background-size: 400px 400px;
+        }
+        ```
+    - Using cover
+        ```css
+        body{
+            background-size: cover;
+        }
+        ```
+    - Using contain
+        ```css
+        body{
+            background-size: contain;
+        }
+        ```
+- Preventing background image from repeating
+    ```css 
+    body{
+        background-repeat: no-repeat;
+    }
+    ```
+- Adjusting transparency of a background color
+    ```css
+    .paragraph{
+        background: rgba(3, 109, 3, 0.5);
     }
     ```
