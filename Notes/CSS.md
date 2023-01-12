@@ -73,3 +73,7 @@ h2.blog{
 |2nd|id Selector|
 |3rd|class Selector|
 |4th|Universal Selector|
+## Writing a comment in CSS
+```css
+/* This is a comment. */
+```
