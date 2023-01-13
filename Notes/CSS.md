@@ -18,7 +18,7 @@
     ```
 ## 2. Difference between id and class
 |id|class|
-| :---|---: |
+| :---|:--- |
 |It is a unique identifier.|It is a property.|
 |Multiple elements cannot have same id.|Multiple elements can have  class.|
 |One element can have only one id.|One element can have multiple ses.|
@@ -68,7 +68,7 @@
     ```
 - Preference Order in CSS
     |Order|Type|
-    |:--|--:|
+    |:--|:--|
     |1st|Inline CSS|
     |2nd|id Selector|
     |3rd|class Selector|
@@ -136,23 +136,85 @@
         ```css
         body{
             background-size: cover;
+            /* The image keeps its aspect ratio and fills the given dimension */
         }
         ```
     - Using contain
         ```css
         body{
             background-size: contain;
+            /*  The image keeps its aspect ratio, but is resized to fit within the given dimension */
         }
         ```
-- Preventing background image from repeating
-    ```css 
+- Adjusting position of background image
+    ```css
     body{
-        background-repeat: no-repeat;
+        /* Keyword Values */
+        background-position: top;
+        /* Percentage Values */
+        background-position: 25% 75%;
+        /* Length Values */
+        background-position: 1cm 2cm;
+        /* Multiple images */
+        background-position: 0 0, center;
+        /* Edge offsets values */
+        background-position: bottom 10px right 20px;
     }
     ```
-- Adjusting transparency of a background color
+- Repeat property of background image
+    ```css 
+    body{
+        /* Display image only once */
+        background-repeat: no-repeat;
+        /* Repeat image vertically */
+        background-repeat: repeat-y;
+        /* Repeat image horizontally */
+        background-repeat: repeat-x;
+    }
+    ```
+- Specify if the background image will scroll or be fixed
+    ```css
+    body{
+        /* The background image will be fixed */
+        background-attachment: fixed;
+        /* The background image will scroll with the rest of the page */
+        background-attachment: scroll;
+    }
+    ```
+- Adjusting opacity / transparency of a background 
+    ```css
+    .paragraph{
+        opacity: 0.5;
+    }
+    ```
+- Adjusting transparency of a background color using RGBA
     ```css
     .paragraph{
         background: rgba(3, 109, 3, 0.5);
     }
     ```
+## 7. Types of Units in CSS
+- Absolute Units
+    |Units|Description|
+    |:--|:--|
+    |cm|centimeters|
+    |mm|millimeters|
+    |in|inches (1in = 96px = 2.54cm)|
+    |px|pixels (1px = 1/96th of 1in)|
+    |pt|points (1pt = 1/72 of 1in)|
+    |pc|picas (1pc = 12 pt)|
+- Relative Units
+    |Units|Description|
+    |:--|:--|
+    |em|Relative to the font-size of the element|	
+    |ex|Relative to the x-height of the current font|	
+    |ch|Relative to width of the "0"|	
+    |rem|Relative to font-size of the root element|	
+    |vw|Relative to 1% of the width of the viewport|	
+    |vh|Relative to 1% of the height of the viewport|	
+    |vmin|Relative to 1% of viewport's smaller dimension|	
+    |vmax|Relative to 1% of viewport's larger dimension|	
+    |%|Relative to the parent element|
+## 8. Text Manipulation in CSS
+
+## 9. Font Manipulation in CSS
