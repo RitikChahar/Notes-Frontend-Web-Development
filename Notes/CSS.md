@@ -216,5 +216,44 @@
     |vmax|Relative to 1% of viewport's larger dimension|	
     |%|Relative to the parent element|
 ## 8. Text Manipulation in CSS
-
+- Text Color
+    ```css
+    .paragraph{
+        color:aqua;
+    }
+    ```
+- Text Background Color
+    ```css
+    .paragraph{
+        background-color:aqua;
+    }
+    ```
+- Text Alignment
+    ```css
+    .paragraph{
+        /* text-align property is used to set the horizontal alignment of a text */
+        text-align: left;
+        text-align: right;
+        text-align: center;
+        text-align: justify;
+        /* text-align-last property is used to specify how to align the last line of a text. */
+        text-align-last: left;
+        text-align-last: right;
+        text-align-last: center;
+        text-align-last: justify;
+        /* direction and unicode-bidi properties are used to change the text direction of an element */
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        direction: ltr;
+        /* vertical-align property is used to set the vertical alignment of an element */
+        vertical-align: top;
+        vertical-align: bottom;
+        vertical-align: baseline;
+        vertical-align: text-top;
+        vertical-align: text-bottom;
+        vertical-align: sub;
+        vertical-align: super;
+    }
+    ```
+- Text Decoration
 ## 9. Font Manipulation in CSS
