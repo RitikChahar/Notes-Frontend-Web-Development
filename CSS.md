@@ -382,4 +382,136 @@
     font-family: 'Name of the Font Family';
     src: URL('fileName.otf') format('opentype');
     }
-    ``` 
+    ```
+## 10. CSS Box Model
+![Alt text](https://upload.wikimedia.org/wikipedia/commons/e/ed/Box-model.svg) 
+- Height and Width
+    ```css
+    div{
+        /* in pixels */
+        height: 10px;
+        width: 10px;
+        /* in centimetres */
+        height: 10cm;
+        width: 10cm;
+        /* in percentage */
+        height: 10%;
+        width: 10%;
+        /* The height and width properties do not include padding, borders, or margins. */
+    }
+    ```
+- Margin
+    ```css
+    div{
+        /* margin-direction property */
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        /* margin property with four values */
+        margin: top right bottom left;
+        /* margin property with three values */
+        margin: top right bottom;
+        /* margin property with two values */
+        margin: top-bottom right-left;
+        /* margin property with one value */
+        margin: all-four-margins;
+        /* margin property auto is used to horizontally center the element */
+        margin: auto;
+        /* margin property inherit is used to inherit margin from parent element */
+        margin: inherit;
+    }
+    /* Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This is called Margin Collapse. */
+    ```
+- Padding
+    ```css
+    div{
+        /* padding-direction property */
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        /* padding property with four values */
+        padding: top right bottom left;
+        /* padding property with three values */
+        padding: top right-left bottom;
+        /* padding property with two values */
+        padding: top-bottom right-left;
+        /* padding property with one value */
+        padding: all-four-paddings;
+    }
+    ```
+- Border
+    - Border Style
+        ```css
+        div{
+            /* border-style property specifies what kind of border to display */
+            border-style: dotted;
+            border-style: dashed;
+            border-style: solid;
+            border-style: double;
+            border-style: groove;
+            border-style: ridge;
+            border-style: inset;
+            border-style: outset;
+            border-style: none;
+            border-style: hidden;
+            /* border-style property with four values */
+            border-style: top right bottom left;
+            /* border-style property with three values */
+            border-style: top right-left bottom;
+            /* border-style property with two values */
+            border-style: top-bottom right-left;
+            /* border-style property with one value */
+            border-style: all-four-borders;
+        }
+        ```
+    - Border Width
+        ```css
+        div{
+            /* border-width property specifies the width of the four borders */
+            /* border-width property with four values */
+            border-width: top right bottom left;
+            /* border-width property with three values */
+            border-width: top right-left bottom;
+            /* border-width property with two values */
+            border-width: top-bottom right-left;
+            /* border-width property with one value */
+            border-width: all-four-borders;
+        }
+        ```
+    - Border Color
+        ```css
+        div{
+            /* border-color property specifies the color of the four borders */
+            /* border-color property with four values */
+            border-color: top right bottom left;
+            /* border-color property with three values */
+            border-color: top right-left bottom;
+            /* border-color property with two values */
+            border-color: top-bottom right-left;
+            /* border-color property with one value */
+            border-color: all-four-borders;
+        }
+    - Border Shorthand
+        ```css
+        div{
+            border-direction: 5px solid red;
+        }
+        ```
+    - Rounded Borders
+        ```css
+        div{
+            border-radius: 10px;
+        }
+        ```
+- Box Sizing
+    ```css
+    /* box-sizing property allows us to include the padding and border in an element's total width and height */
+    div{
+        /* the width and height properties includes content, padding and border */
+        box-sizing: border-box;
+        /* the width and height properties includes only the content */
+        box-sizing: content-box;
+    }
+    ```
