@@ -256,4 +256,75 @@
     }
     ```
 - Text Decoration
+    ```css
+    .paragraph{
+        /* text-decoration-line property is used to add a decoration line to text */
+        text-decoration-line: none;
+        text-decoration-line: overline;
+        text-decoration-line: line-through;
+        text-decoration-line: underline;
+        text-decoration-line: overline underline;
+        text-decoration-line: overline underline line-through;
+        /* text-decoration-color property is used to set the color of the decoration line */
+        text-decoration-color: green;
+        /* text-decoration-style property is used to set the style of the decoration line */
+        text-decoration-style: solid;
+        text-decoration-style: double;
+        text-decoration-style: dotted;
+        text-decoration-style: dashed;
+        text-decoration-style: wavy;
+        /* text-decoration-thickness property is used to set the thickness of the decoration line */
+        text-decoration-thickness: auto;
+        text-decoration-thickness: 5px;
+        text-decoration-thickness: 25%;
+        /* text-decoration property can be used like this */
+        text-decoration: underline red double 5px;
+    }
+    ```
+- Text Transformation
+    ```css
+    .paragraph{
+        /* text-transform property is used to specify uppercase and lowercase letters in a text */
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: capitalize;
+    }
+    ```
+- Text Spacing
+    ```css
+    .paragraph{
+        /* text-indent property is used to specify the indentation of the first line of a text */
+        text-indent: 50px;
+        text-indent: 50%;
+        /* letter-spacing property is used to specify the space between the characters in a text */
+        letter-spacing: 5px;
+        letter-spacing: -5px;
+        /* line-height property is used to specify the space between lines */
+        line-height: 1.5;
+        line-height: 10px;
+        line-height: 10%;
+        /* word-spacing property is used to specify the space between the words in a text */
+        word-spacing: 20px;
+        word-spacing: -20px;
+        /* white-space property specifies how white-space inside an element is handled */
+        white-space: normal;
+        white-space: nowrap;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: pre-line;
+    }
+    ```
+- Text Shadow
+    ```css
+    .paragraph{
+        /* text-shadow property adds shadow to text */
+        text-shadow: 2px 2px;
+        /* add color to the shadow */
+        text-shadow: 2px 2px red;
+        /* add blur to the shadow */
+        text-shadow: 2px 2px 5px red;
+        /* add multiple shadows */
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    ```
 ## 9. Font Manipulation in CSS
