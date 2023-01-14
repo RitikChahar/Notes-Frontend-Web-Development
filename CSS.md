@@ -328,3 +328,44 @@
     }
     ```
 ## 9. Font Manipulation in CSS
+- Font Family
+    ```css
+    .paragraph{
+        /* if the font name is more than one word, it must be in quotation marks */
+        font-family: "Times New Roman", Times, serif;
+        /* here Times and serif are backups in case "Times New Roman" is not found */
+        /* some commonly used font fallbacks are -  serif, sans-serif, monospace, cursive, fantasy */
+    }
+    ```
+- Font Style
+    ```css
+    .paragraph{
+        /* font-style */
+        font-style: normal;
+        font-style: italic;
+        font-style: oblique;
+        /* font-weight property specifies the weight of a font */
+        font-weight: normal;
+        font-weight: bold;
+        /* font-variant property specifies whether or not a text should be displayed in a small-caps font */
+        font-variant: normal;
+        font-variant: small-caps;
+        /* font-size property sets the size of the text */
+        font-size: 30px;
+        font-size: 30%;
+        font-size: 2.5em;
+        /* font property is a shorthand property to use all these properties at once */
+        font: italic small-caps bold 30px Georgia, serif;
+    }
+    ```
+- Font Google
+    1. Add a special stylesheet link to your HTML document
+        ```html
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        ```
+    2.  Refer to the font in a CSS style
+        ```css
+        .paragraph{
+            font-family: 'Tangerine', serif;
+        }
+        ```
