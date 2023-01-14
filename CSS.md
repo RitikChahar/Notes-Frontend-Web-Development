@@ -358,7 +358,7 @@
         font: italic small-caps bold 30px Georgia, serif;
     }
     ```
-- Font Google
+- Add custom font-family using Google Fonts
     1. Add a special stylesheet link to your HTML document
         ```html
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -369,3 +369,17 @@
             font-family: 'Tangerine', serif;
         }
         ```
+- Add custom font-family from a ttf file
+    ```css
+    @font-face {
+    font-family: 'Name of the Font Family';
+    src: URL('fileName.ttf') format('truetype');
+    }
+    ``` 
+- Add custom font-family from a otf file
+    ```css
+    @font-face {
+    font-family: 'Name of the Font Family';
+    src: URL('fileName.otf') format('opentype');
+    }
+    ``` 
