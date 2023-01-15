@@ -515,3 +515,27 @@
         box-sizing: content-box;
     }
     ```
+## 11. Float and Clear
+- Float
+```css
+.box{
+    /* float property specifies how an element should float */
+    float: none;
+    float: left;
+    float: right;
+    float: inline-start;
+    float: inline-end;
+    float: inherit;
+}
+```
+- Clear
+```css
+.box{
+    /* clear property specifies what should happen with the element that is next to a floating element */
+    clear: none;
+    clear: left;
+    clear: right;
+    clear: both;
+}
+```
+## 12. Flexbox
