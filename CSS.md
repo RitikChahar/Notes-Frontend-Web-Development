@@ -517,25 +517,105 @@
     ```
 ## 11. Float and Clear
 - Float
-```css
-.box{
-    /* float property specifies how an element should float */
-    float: none;
-    float: left;
-    float: right;
-    float: inline-start;
-    float: inline-end;
-    float: inherit;
-}
-```
+    ```css
+    .box{
+        /* float property specifies how an element should float */
+        float: none;
+        float: left;
+        float: right;
+        float: inline-start;
+        float: inline-end;
+        float: inherit;
+    }
+    ```
 - Clear
-```css
-.box{
-    /* clear property specifies what should happen with the element that is next to a floating element */
-    clear: none;
-    clear: left;
-    clear: right;
-    clear: both;
-}
-```
-## 12. Flexbox
+    ```css
+    .box{
+        /* clear property specifies what should happen with the element that is next to a floating element */
+        clear: none;
+        clear: left;
+        clear: right;
+        clear: both;
+    }
+    ```
+## 12. CSS Flexbox
+![Alt text](https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/uSH4TxRv8KNQDTK7Vn8h.svg) 
+- Flex Container
+    ```css
+    .box{
+        /* to create a flex box */
+        display: flex;
+        /* flex-direction property defines in which direction the container wants to stack the flex items */
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        /* flex-wrap property specifies whether the flex items should wrap or not */
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        /* flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties */
+        flex-flow: row wrap;
+        /* justify-content property is used to align the flex items */
+        justify-content: center;     
+        justify-content: start;
+        justify-content: end;        
+        justify-content: flex-start;  
+        justify-content: flex-end;    
+        justify-content: left;       
+        justify-content: right; 
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        justify-content: stretch;
+        /* align-items property is used to align the flex items */
+        align-items: center;
+        align-items: start;
+        align-items: end;
+        align-items: flex-start; 
+        align-items: flex-end;
+        align-items: stretch;
+        align-items: baseline;
+        /* align-content property is used to align the flex lines */
+        align-content: center;
+        align-content: start;
+        align-content: end;   
+        align-content: flex-start; 
+        align-content: flex-end;  
+        align-content: stretch;
+        align-content: space-evenly;
+        align-content: space-between;
+        align-content: space-around;
+        align-content: baseline;
+    }
+    ```
+- Flex Item
+    ```css
+    .box{
+        /* order property specifies the order of the flex items */
+        order: 2;
+        order: -2;
+        /* flex-grow property specifies how much a flex item will grow relative to the rest of the flex items */
+        flex-grow: 2;
+        flex-grow: 2.5;
+        /* flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items */
+        flex-shrink: 2;
+        flex-shrink: 2.5;
+        /* flex-basis property specifies the initial length of a flex item */
+        flex-basis: 10em;
+        flex-basis: 3px;
+        flex-basis: 50%;
+        /* flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties */
+        flex: flex-grow flex-shrink flex-basis;
+        /* align-self property specifies the alignment for the selected item inside the flexible container */
+        align-self: center; 
+        align-self: start; 
+        align-self: end;
+        align-self: flex-start; 
+        align-self: flex-end; 
+        align-self: self-start; 
+        align-self: self-end; 
+        align-self: baseline;
+        align-self: stretch;
+    }
+    ```
