@@ -619,3 +619,26 @@
         align-self: stretch;
     }
     ```
+## 13. CSS Positions
+```css
+.paragraph{
+    /* position property specifies the type of positioning method used for an element  */
+    position: static;
+    /* static positioned elements are not affected by the top, bottom, left, and right properties */
+    position: relative;
+    /* setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position */
+    position: fixed;
+    /* element with fixed position is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
+    position: absolute;
+    /* element with absolute position is positioned relative to the nearest positioned ancestor */
+    position: sticky;
+    /* element with sticky position is positioned based on the user's scroll position */
+    /* top, bottom, left and right properties */
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    /* z-index property specifies the stack order of an element, element with higher z-index will be on top  */
+    z-index: 2;
+}
+``` 
