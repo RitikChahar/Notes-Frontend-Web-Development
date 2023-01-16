@@ -496,7 +496,7 @@
     - Border Shorthand
         ```css
         div{
-            border-direction: 5px solid red;
+            border: 5px solid red;
         }
         ```
     - Rounded Borders
