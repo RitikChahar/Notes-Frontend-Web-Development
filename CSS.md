@@ -875,6 +875,12 @@
     }
     ```
 ## 17. CSS Transitions
+- Using Hover
+    ```css
+    .box:hover {
+    background-color: yellow;
+    }
+    ```
 - transition-property Property
     ```css
     .box{
