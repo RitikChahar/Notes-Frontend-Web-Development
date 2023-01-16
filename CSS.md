@@ -637,7 +637,79 @@
         align-self: stretch;
     }
     ```
-## 13. CSS Positions
+## 13. CSS Grid
+![Alt text](https://webkit.org/wp-content/uploads/grid-concepts.svg) 
+- Grid Container
+    ```css
+    div{
+        /* to create a grid */
+        display: grid;
+        display: inline-grid;
+        /* row-gap property sets the gap between the rows */
+        row-gap: 50px;
+        /* column-gap property sets the gap between the columns */
+        column-gap: 50px;
+        /* gap property is a shorthand property for the row-gap and the column-gap properties */
+        gap: row column;
+        /* gap property with one value */
+        gap: row-column;
+        /* grid-template-areas property specifies named grid areas */
+        grid-template-areas: 'box1 box2'
+                             'box3 box4'; 
+        /* grid-template-columns specifies the size of the columns and number of columns in a grid layout */
+        grid-template-columns: auto auto auto;
+        grid-template-columns: 200px 300px 50px 500px;
+        /* grid-template-rows specifies the size of the rows in a grid layout */
+        grid-template-rows: auto auto auto;
+        grid-template-rows: 200px 300px 50px 500px;
+        /* justify-content property is used to align the whole grid inside the container */
+        justify-content: center;     
+        justify-content: start;
+        justify-content: end;        
+        justify-content: flex-start;  
+        justify-content: flex-end;    
+        justify-content: left;       
+        justify-content: right; 
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        justify-content: stretch;
+        /* align-content property is used to vertically align the whole grid inside the container */
+        align-content: center;
+        align-content: start;
+        align-content: end;   
+        align-content: flex-start; 
+        align-content: flex-end;  
+        align-content: stretch;
+        align-content: space-evenly;
+        align-content: space-between;
+        align-content: space-around;
+        align-content: baseline;
+    }
+    ```
+- Grid Item
+    ```css
+    div{
+        /* grid-column-start and grid-row-start defines the starting column and row of a grid item */
+        grid-column-start: 2;
+        grid-row-start: 2;
+        /* grid-column-end and grid-row-end defines the ending column and row of a grid item */
+        grid-column-end: 2;
+        grid-row-end: 2;
+        /* grid-area property is used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end */
+        grid-area: row-start / column-start / row-end / column-end;
+        grid-area: row-start / column-start / span row / span column;
+        /* grid-area property is also be used to assign names to grid items, named grid items can be referred to by the grid-template-areas property of the grid container. */
+        grid-area: box;
+        /* grid-column property defines number of columns an item will span */
+        grid-column: 1 / 3;
+        grid-column: 1 / span 3;
+        /* grid-row property defines number of rows an item will span */
+        grid-row: 1 / 3;
+        grid-row: 1 / span 3;
+    }
+    ```
+## 14. CSS Positions
 ```css
 .paragraph{
     /* position property specifies the type of positioning method used for an element  */
@@ -660,3 +732,4 @@
     z-index: 2;
 }
 ``` 
+## 15. CSS Media Queries
