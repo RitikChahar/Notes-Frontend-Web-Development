@@ -875,4 +875,56 @@
     }
     ```
 ## 17. CSS Transitions
+- transition-property Property
+    ```css
+    .box{
+        /* it is the property on which transition will be applied */
+        transition-property: opacity;
+        transition-property: opacity, height;
+    }
+    ```
+- transition-duration Property
+    ```css
+    .box{
+        /* transition-duration property specifies how much time a transition effect takes to complete */
+        transition-duration: 5s;
+        transition-duration: 500ms;
+    }
+    ```
+- transition-delay Property
+    ```css
+    .box{
+        /* transition-delay property specifies a delay for the transition effect */
+        transition-delay: 2s;
+        transition-delay: 250ms;
+    }
+    ```
+- transition-timing-function Property
+    ```css
+    .box{
+        /* transition-timing-function property specifies the speed curve of the transition effect */
+        transition-timing-function: linear;
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
+        transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    }
+    ```
+- transition Property
+    ```css
+    .box{
+        /* transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay */
+        /* property name, duration */
+        transition: margin-right 4s;
+        /* property name, duration, delay */
+        transition: margin-right 4s 1s;
+        /* property name, duration, easing function */
+        transition: margin-right 4s ease-in-out;
+        /* property name, duration, easing function | delay */
+        transition: margin-right 4s ease-in-out 1s;
+        /* apply to multiple properties */
+        transition: margin-right 4s, color 1s;
+    }
+    ```
 ## 18. CSS Animations
