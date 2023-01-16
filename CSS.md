@@ -877,8 +877,12 @@
 ## 17. CSS Transitions
 - Using Hover
     ```css
+    /* Transitions enables us to define the transition between two states of an element */
     .box:hover {
-    background-color: yellow;
+        background: yellow;
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
     }
     ```
 - transition-property Property
@@ -934,3 +938,75 @@
     }
     ```
 ## 18. CSS Animations
+```css
+/* @keyframes */
+@keyframes nameOfAnimation {
+    from {
+        background-color: red;
+        }
+    to {
+        background-color: yellow;
+        }
+}
+/* percentage value states with animation */
+@keyframes nameOfAnimation {
+  0%   {
+    top: 0px;
+    background: red;
+    }
+  25%  {
+      top: 200px;
+      background: white;
+    }
+  50%  {
+      top: 100px;
+      background: green;
+    }
+  75%  {
+      top: 200px;
+      background: orange;
+    }
+  100% {
+      top: 0px;
+      background: blue;
+    }
+}
+.box{
+    /* animation-name  */
+    animation-name: nameOfAnimation;
+    /* animation-duration  */
+    animation-duration: 750ms;
+    animation-duration: 3s;
+    /* animation-delay  */
+    animation-delay: 750ms;
+    animation-delay: 3s;
+    animation-delay: -3s;
+    /* animation-iteration-count  */
+    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
+    /* animation-direction  */
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+    /* animation-timing-function  */
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+    animation-timing-function: step-start;
+    animation-timing-function: step-end;
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    /* animation-fill-mode  */
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+    animation-fill-mode: both;
+    /* animation-play-state */
+    animation-play-state: paused;
+    animation-play-state: running;
+    /* animation  */
+    animation: nameOfAnimation duration timing-function delay iteration-count direction;
+}
+```
