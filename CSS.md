@@ -760,3 +760,119 @@
     }
     }
     ```
+## 16. CSS Transforms
+- transform Property
+    - Translate
+        ```css
+        .box{
+            /* translateX() */
+            transform: translateX(10deg);
+            /* translateY() */
+            transform: translateY(10deg);
+            /* translateZ() */
+            transform: translateZ(10deg);
+            /* translate() */
+            transform: translate(10px , 10px);
+            /* translate3d() */
+            transform: translate3d(10, 20, 30);
+        }
+        ```
+    - Rotate
+        ```css
+        .box{
+            /* rotateX() */
+            transform: rotateX(10deg);
+            /* rotateY() */
+            transform: rotateY(10deg);
+            /* rotateZ() */
+            transform: rotateZ(10deg);
+            /* rotate() */
+            transform: rotate(20deg);
+            transform: rotate(-20deg);
+            /* rotate3d() */
+            transform: rotate3d(10, 20, 30);
+        }
+        ```
+    - Scale
+        ```css
+        .box{
+            /* scaleX() */
+            transform: scaleX(10);
+            /* scaleY() */
+            transform: scaleY(10);
+            /* scaleZ() */
+            transform: scaleZ(10);
+            /* scale() */
+            transform: scale(10,10);
+            /* scale3d() */
+            transform: scale3d(10,10,10);
+        }
+        ```
+    - Skew
+        ```css
+        .box{
+            /* skewX() */
+            transform: skewX(20deg);
+            /* skewY() */
+            transform: skewY(20deg);
+            /* skew() */
+            transform: skew(20deg, 10deg);
+        }
+        ```
+    - Matrix
+        ```css
+        .box{
+            /* matrix() */
+            transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+            /* to use multiple functions together*/
+            transform: translate(80px, 80px) scale(1.5, 1.5) rotate(45deg);
+        }
+        ```
+- transform-origin Property
+    ```css
+    .box{
+        /* transform-origin property allows you to change the position of transformed elements */
+        transform-origin: 20% 40%;
+        transform-origin: 20% 40% 20;
+        /* values can be left, center, right, length, % for X - axis */
+        /* values can be top, center, bottom, length, % for Y - axis */
+        /* values can be length for Z - axis */
+    }
+    ```
+- transform-style Property
+    ```css
+    .box{
+        /* transform-style property specifies how nested elements are rendered in 3D space */
+        transform-style: flat;
+        transform-style: preserve-3d;
+    }
+    ```
+- perspective Property
+    ```css
+    .box{
+        /* perspective property defines how far the object is away from the user */
+        perspective: none;
+        perspective: 800px;
+        perspective: 23rem;
+        perspective: 5.5cm;
+    }
+    ```
+- perspective-origin Property
+    ```css
+    .box{
+        /* perspective-origin property defines at from which position the user is looking at the 3D-positioned element */
+        perspective-origin: value-x value-y;
+        /* value can be left, center, right, length, % for X axis, default value is 50% */
+        /* value can be top, center, bottom, length, % for Y axis, default value is 50% */
+    }
+    ```
+- backface-visibility Property
+    ```css
+    .box{
+        /* backface-visibility property defines whether or not the back face of an element should be visible when facing the user */
+        backface-visibility: visible;
+        backface-visibility: hidden;
+    }
+    ```
+## 17. CSS Transitions
+## 18. CSS Animations
