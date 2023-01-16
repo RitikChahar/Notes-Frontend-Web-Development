@@ -654,8 +654,8 @@
         /* gap property with one value */
         gap: row-column;
         /* grid-template-areas property specifies named grid areas */
-        grid-template-areas: 'box1 box2'
-                             'box3 box4'; 
+        grid-template-areas: 'box1 box1 . box2'
+                             'box3 . box4 .'; 
         /* grid-template-columns specifies the size of the columns and number of columns in a grid layout */
         grid-template-columns: auto auto auto;
         grid-template-columns: 200px 300px 50px 500px;
@@ -733,3 +733,30 @@
 }
 ``` 
 ## 15. CSS Media Queries
+- max-width
+    ```css
+    /* if the browser window is 600px or smaller, the background color will be orange */
+    @media only screen and (max-width: 600px) {
+        body {
+        background-color: orange;
+        }
+    }
+    ```
+- min-width
+    ```css
+    /* if the browser window is 600px or above, the background color will be red */
+    @media only screen and (min-width: 600px) {
+        body {
+        background-color: red;
+        }
+    }
+    ```
+- landscape
+    ```css
+    /* web page will have a blue background if the orientation is in landscape mode */
+    @media only screen and (orientation: landscape) {
+    body {
+        background-color: blue;
+    }
+    }
+    ```
