@@ -515,6 +515,24 @@
         box-sizing: content-box;
     }
     ```
+- Box Shadow
+    ```css
+    .paragraph{
+        /* box-shadow property adds shadow to box */
+        box-shadow: 2px 2px;
+        /* add color to the shadow */
+        box-shadow: 2px 2px red;
+        /* add blur to the shadow */
+        box-shadow: 2px 2px 5px red;
+        /* add multiple shadows */
+        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        /* add shadow spread-radius */
+        box-shadow: 2px 2px 5px 10px red;
+        /* add shadow inside the box */
+        box-shadow: inset 2px 2px 5px red;
+
+    }
+    ```
 ## 11. Float and Clear
 - Float
     ```css
